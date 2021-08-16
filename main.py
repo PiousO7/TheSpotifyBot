@@ -53,5 +53,7 @@ for song in song_list:
 
 # ADDS EACH SONG TO PLAYLIST
 sp.playlist_add_items(playlist_id=playlist["id"], items=all_links)
+playlist_link = playlist["external_urls"]["spotify"]
 
-print("Songs Added")
+
+print(f"Songs Added. Link for the playlist: {playlist_link}")
